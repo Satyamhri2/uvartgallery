@@ -130,4 +130,209 @@ footer{
 </footer>
 
 </body>
+</html>-------------<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UV Art Studio | Premium Artist Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#fff6e5,#fdfcff);
+  color:#222;
+  overflow-x:hidden;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+  background:linear-gradient(120deg,#ff9a9e,#fad0c4,#fbc2eb);
+  animation:bgMove 10s infinite alternate;
+}
+@keyframes bgMove{
+  0%{filter:hue-rotate(0deg)}
+  100%{filter:hue-rotate(40deg)}
+}
+.hero h1{
+  font-size:55px;
+  color:#111;
+}
+.hero p{
+  font-size:18px;
+  margin:15px 0 30px;
+}
+.hero a{
+  margin:10px;
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  color:#fff;
+}
+.call{background:#111}
+.whatsapp{background:#25D366}
+
+/* MARQUEE */
+.marquee{
+  background:#111;
+  color:#fff;
+  padding:12px 0;
+  font-size:18px;
+  letter-spacing:2px;
+}
+
+/* SECTIONS */
+section{
+  padding:80px 40px;
+}
+h2{
+  text-align:center;
+  font-size:38px;
+  margin-bottom:40px;
+}
+
+/* ABOUT */
+.about{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  font-size:18px;
+  line-height:1.8;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:22px;
+}
+.gallery img{
+  width:100%;
+  border-radius:18px;
+  transition:.6s;
+  box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+.gallery img:hover{
+  transform:scale(1.08) rotate(1deg);
+  filter:saturate(130%);
+}
+
+/* AUTO HIGHLIGHT */
+.highlight{
+  animation:glow 4s infinite alternate;
+}
+@keyframes glow{
+  0%{box-shadow:0 0 10px #ff7a18}
+  100%{box-shadow:0 0 30px #ff7a18}
+}
+
+/* REVIEWS */
+.reviews{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.review{
+  background:#fff;
+  padding:25px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+.review span{color:#f39c12}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+}
+.contact a{
+  display:inline-block;
+  margin:10px;
+  padding:14px 26px;
+  border-radius:30px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:600;
+}
+.instagram{background:#E1306C}
+.facebook{background:#1877F2}
+.linkedin{background:#0A66C2}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:#aaa;
+  text-align:center;
+  padding:25px;
+  margin-top:60px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>UV Art Studio</h1>
+  <p>Fine Art • Creative Paintings • Custom Artwork</p>
+  <a href="tel:+91XXXXXXXXXX" class="call">📞 Call Now</a>
+  <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬 WhatsApp</a>
+</div>
+
+<div class="marquee">
+<marquee>🎨 Premium Artist Portfolio • Custom Paintings • School / Classes / Clients Welcome • UV Art Studio 🎨</marquee>
+</div>
+
+<section>
+<h2>About the Artist</h2>
+<p class="about">
+UV Art Studio is a creative space where emotions turn into colors.
+Every artwork is handcrafted with passion, imagination, and artistic excellence.
+Perfect for exhibitions, schools, clients & art lovers.
+</p>
+</section>
+
+<section>
+<h2>Featured Art Gallery</h2>
+<div class="gallery">
+
+<img class="highlight" src="https://i.ibb.co/xrT15Fb/Whats-App-Image-2026-02-10-at-12-24-22-PM-2.jpg">
+<img src="https://i.ibb.co/1GHXKX8f/Whats-App-Image-2026-02-10-at-12-24-22-PM-1.jpg">
+<img src="https://i.ibb.co/JW4Kgh6J/Whats-App-Image-2026-02-10-at-12-24-58-PM-1.jpg">
+<img src="https://i.ibb.co/7J7JnCby/Whats-App-Image-2026-02-10-at-12-24-57-PM-1.jpg">
+<img class="highlight" src="https://i.ibb.co/Hf4439yt/Whats-App-Image-2026-02-10-at-12-24-57-PM.jpg">
+
+</div>
+</section>
+
+<section>
+<h2>Client Reviews</h2>
+<div class="reviews">
+  <div class="review">⭐⭐⭐⭐⭐<br>Beautiful artwork & very professional.</div>
+  <div class="review">⭐⭐⭐⭐⭐<br>Highly recommended for schools & exhibitions.</div>
+  <div class="review">⭐⭐⭐⭐⭐<br>Creative, colorful & premium quality art.</div>
+</div>
+</section>
+
+<section class="contact">
+<h2>Connect With Me</h2>
+<a href="#" class="instagram">Instagram</a>
+<a href="#" class="facebook">Facebook</a>
+<a href="#" class="linkedin">LinkedIn</a>
+</section>
+
+<footer>
+© 2026 UV Art Studio | All Rights Reserved
+</footer>
+
+</body>
 </html>
+
