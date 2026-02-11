@@ -4,40 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- PRIMARY SEO -->
-<title>Yashika Purwar | Art Teacher in Jabalpur | Freelance Artist Portfolio</title>
-<meta name="description" content="Yashika Purwar is a professional Art Teacher and Freelance Artist based in Jabalpur with 4+ years of experience in stone art, sketching, painting, miniature art and curriculum design.">
-<meta name="keywords" content="Art Teacher Jabalpur, Freelance Artist India, Stone Art Artist, Miniature Painting, Sketch Artist, Art Classes Jabalpur, Fine Arts Portfolio">
+<title>Yashika Purwar | Art Teacher in Jabalpur | Freelance Fine Artist</title>
+<meta name="description" content="Yashika Purwar is a professional Art Teacher and Freelance Artist based in Jabalpur with 4+ years of experience in stone art, miniature painting, sketching and art curriculum design.">
+<meta name="keywords" content="Art Teacher Jabalpur, Freelance Artist India, Stone Art, Miniature Painting, Fine Arts Portfolio, Art Classes Jabalpur">
 <meta name="author" content="Yashika Purwar">
 <meta name="robots" content="index, follow">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Yashika Purwar | Creative Art Teacher & Freelance Artist">
-<meta property="og:description" content="Professional Art Portfolio showcasing teaching experience, artwork and freelance services.">
-<meta property="og:type" content="website">
-
-<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Yashika Purwar",
+ "jobTitle": "Art Teacher & Freelance Artist",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Jabalpur",
+   "addressRegion": "Madhya Pradesh",
+   "addressCountry": "India"
+ },
+ "telephone": "+91-9691419001",
+ "email": "purwaryashi23@gmail.com"
+}
+</script>
+
 <style>
-
-/* ===== GLOBAL ===== */
-
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
-
 body{
 font-family:'Poppins',sans-serif;
 background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
 color:#fff;
 overflow-x:hidden;
 }
-
 section{padding:100px 8%;}
-
 h1,h2,h3{font-family:'Playfair Display',serif;}
-
 .section-title{
 text-align:center;
 font-size:34px;
@@ -47,8 +53,7 @@ background:linear-gradient(45deg,#ff9a9e,#a18cd1,#fad0c4);
 -webkit-text-fill-color:transparent;
 }
 
-/* ===== NAV ===== */
-
+/* NAV */
 header{
 position:fixed;
 width:100%;
@@ -56,91 +61,33 @@ padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,0.5);
-backdrop-filter:blur(15px);
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
 z-index:1000;
 }
-
-.logo{
-font-size:22px;
-font-weight:600;
-}
-
-nav{display:flex;gap:25px;}
-
 nav a{
 color:#fff;
 text-decoration:none;
+margin-left:20px;
 transition:.3s;
 }
-
 nav a:hover{color:#ff9a9e;}
 
-.menu-btn{display:none;font-size:24px;cursor:pointer;}
-
-.mobile-nav{
-position:fixed;
-top:0;
-right:-100%;
-width:250px;
-height:100vh;
-background:#111;
-padding:80px 20px;
-transition:.4s;
-z-index:999;
-}
-
-.mobile-nav a{
-display:block;
-margin:20px 0;
-color:#fff;
-text-decoration:none;
-}
-
-.mobile-nav.active{right:0;}
-
-/* ===== HERO ===== */
-
+/* HERO */
 .hero{
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-position:relative;
-overflow:hidden;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1513364776144-60967b0f800f') center/cover;
 }
-
-.hero::before{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background-size:cover;
-background-position:center;
-animation:slideShow 18s infinite;
-z-index:-2;
+.hero h1{
+font-size:60px;
+animation:fadeUp 1.5s ease forwards;
 }
-
-.hero::after{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-z-index:-1;
-}
-
-@keyframes slideShow{
-0%{background-image:url('https://images.unsplash.com/photo-1513364776144-60967b0f800f');}
-33%{background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');}
-66%{background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba');}
-100%{background-image:url('https://images.unsplash.com/photo-1513364776144-60967b0f800f');}
-}
-
-.hero h1{font-size:55px;}
 .hero p{margin:20px 0;font-size:20px;}
-
 .btn{
 display:inline-block;
 padding:14px 30px;
@@ -151,148 +98,78 @@ color:#fff;
 text-decoration:none;
 transition:.4s;
 }
-
 .btn:hover{
 transform:scale(1.1);
 box-shadow:0 15px 30px rgba(255,154,158,.5);
 }
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
 
-/* ===== GLASS CARD ===== */
-
+/* CARD */
 .card{
 background:rgba(255,255,255,0.08);
 backdrop-filter:blur(20px);
 padding:30px;
 border-radius:20px;
+margin-bottom:20px;
 transition:.4s;
 }
+.card:hover{transform:translateY(-10px);}
 
-.card:hover{
-transform:translateY(-10px);
-}
-
-/* ===== TIMELINE ===== */
-
-.timeline{
-border-left:3px solid #ff9a9e;
-padding-left:20px;
-}
-
-.timeline div{margin-bottom:30px;}
-
-/* ===== SKILLS ===== */
-
-.skill{margin-bottom:25px;}
-
-.skill-bar{
-height:8px;
-background:#444;
-border-radius:10px;
-overflow:hidden;
-}
-
-.skill-bar span{
-display:block;
-height:100%;
-background:linear-gradient(45deg,#ff9a9e,#a18cd1);
-width:0;
-animation:load 2s forwards;
-}
-
-.skill:nth-child(1) span{animation-delay:.2s;width:95%;}
-.skill:nth-child(2) span{animation-delay:.4s;width:90%;}
-.skill:nth-child(3) span{animation-delay:.6s;width:85%;}
-.skill:nth-child(4) span{animation-delay:.8s;width:92%;}
-
-/* ===== GALLERY ===== */
-
+/* GALLERY */
 .gallery{
 display:flex;
+flex-wrap:wrap;
 gap:20px;
-overflow-x:auto;
-scroll-snap-type:x mandatory;
-}
-
-.gallery img{
-height:260px;
-border-radius:15px;
-cursor:pointer;
-transition:.4s;
-scroll-snap-align:center;
-}
-
-.gallery img:hover{
-transform:scale(1.1);
-}
-
-/* ===== LIGHTBOX ===== */
-
-.lightbox{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.9);
-display:none;
 justify-content:center;
-align-items:center;
-z-index:2000;
 }
-
-.lightbox img{
-max-width:85%;
-max-height:85%;
+.gallery img{
+width:280px;
+height:220px;
+object-fit:cover;
 border-radius:15px;
+transition:.5s;
+filter:brightness(.9);
+}
+.gallery img:hover{
+transform:scale(1.08);
+filter:brightness(1.1);
 }
 
-/* ===== FOOTER ===== */
-
+/* FOOTER */
 footer{
 text-align:center;
 padding:20px;
 background:#111;
-margin-top:50px;
 }
-
-/* ===== RESPONSIVE ===== */
 
 @media(max-width:768px){
-nav{display:none;}
-.menu-btn{display:block;}
-.hero h1{font-size:34px;}
+.hero h1{font-size:36px;}
 section{padding:80px 5%;}
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">Yashika Purwar</div>
+<div><strong>Yashika Purwar</strong></div>
 <nav>
 <a href="#about">About</a>
 <a href="#experience">Experience</a>
-<a href="#skills">Skills</a>
+<a href="#services">Services</a>
 <a href="#portfolio">Portfolio</a>
 <a href="#contact">Contact</a>
 </nav>
-<div class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
 </header>
-
-<div class="mobile-nav" id="mobileNav">
-<a href="#about" onclick="toggleMenu()">About</a>
-<a href="#experience" onclick="toggleMenu()">Experience</a>
-<a href="#skills" onclick="toggleMenu()">Skills</a>
-<a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
-<a href="#contact" onclick="toggleMenu()">Contact</a>
-</div>
 
 <!-- HERO -->
 <section class="hero">
 <div>
-<h1>Creative Art Teacher & Freelance Artist</h1>
+<h1>Yashika Purwar</h1>
+<p>Professional Art Teacher in Jabalpur | Freelance Fine Artist</p>
 <p>4+ Years Experience | Stone Art | Miniature Painting | Curriculum Design</p>
 <a href="#portfolio" class="btn">View Portfolio</a>
 <a href="Yashika-Purwar-CV.pdf" class="btn" download>Download CV</a>
@@ -303,112 +180,60 @@ section{padding:80px 5%;}
 <section id="about">
 <h2 class="section-title">Professional Summary</h2>
 <div class="card">
-Creative and passionate Art Teacher and Freelance Artist with over 4 years of experience in educational institutions and independent creative projects. Specialized in stone art, sketching, painting, miniature art, and structured art curriculum development.
+Creative and passionate Art Teacher & Freelance Artist with 4+ years of experience in fine arts education and commissioned artwork. Specialized in stone art, sketching, miniature painting, and structured curriculum development.
 </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
 <h2 class="section-title">Work Experience</h2>
-<div class="timeline">
-<div>
+<div class="card">
 <h3>Art Instructor – Brain Train Academy (2022 – Present)</h3>
-<p>Designed structured curriculum, conducted workshops, and guided students in creative skill development.</p>
+<p>Developed structured art curriculum, conducted workshops and guided students in creative development.</p>
 </div>
-<div>
+<div class="card">
 <h3>Freelance Artist – UV Studio (2020 – Present)</h3>
-<p>Delivered customized artworks, managed multiple client projects, and maintained professional creative standards.</p>
-</div>
+<p>Delivered customized artwork projects while maintaining high quality and client satisfaction.</p>
 </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-<h2 class="section-title">Professional Skills</h2>
-
-<div class="skill">
-<p>Art Curriculum Development</p>
-<div class="skill-bar"><span></span></div>
+<!-- SERVICES -->
+<section id="services">
+<h2 class="section-title">Art Services</h2>
+<div class="card">
+<h3>🎨 Art Classes</h3>
+<p>Offline & Online structured fine arts training for children and beginners.</p>
 </div>
-
-<div class="skill">
-<p>Sketching & Painting</p>
-<div class="skill-bar"><span></span></div>
+<div class="card">
+<h3>🖌 Commissioned Artwork</h3>
+<p>Customized stone art, portraits, miniature paintings and decorative artwork.</p>
 </div>
-
-<div class="skill">
-<p>Stone & Miniature Art</p>
-<div class="skill-bar"><span></span></div>
+<div class="card">
+<h3>🏫 School Curriculum Design</h3>
+<p>Professional art syllabus planning and workshops for educational institutions.</p>
 </div>
-
-<div class="skill">
-<p>Creative Student Engagement</p>
-<div class="skill-bar"><span></span></div>
-</div>
-
 </section>
 
 <!-- PORTFOLIO -->
 <section id="portfolio">
 <h2 class="section-title">Portfolio Gallery</h2>
 <div class="gallery">
-<a href="https://ibb.co/FkJcsSQX"><img src="https://i.ibb.co/Ngpf180r/Whats-App-Image-2024-09-08-at-1-59-38-PM.jpg" alt="Whats-App-Image-2024-09-08-at-1-59-38-PM" border="0"></a>
-<a href="https://ibb.co/sJvWvW2g"><img src="https://i.ibb.co/G3vHvH0d/Whats-App-Image-2024-09-08-at-2-03-36-PM-1.jpg" alt="Whats-App-Image-2024-09-08-at-2-03-36-PM-1" border="0"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/zTpPyMBx/yashi-log.jpg" alt="yashi log" border="0"></a>
-<a href="https://ibb.co/cchKymym"><img src="https://i.ibb.co/3ym5TJTJ/b1.jpg" alt="b1" border="0"></a>
-<a href="https://ibb.co/Kcck8qxW"><img src="https://i.ibb.co/TDDSN8Mt/b2.jpg" alt="b2" border="0"></a>
-<a href="https://ibb.co/0RR405PS"><img src="https://i.ibb.co/G44YZmgL/b3.jpg" alt="b3" border="0"></a>
-<a href="https://ibb.co/jPmdfdFn"><img src="https://i.ibb.co/C3gq8qFR/b4.jpg" alt="b4" border="0"></a>
-<a href="https://ibb.co/7twzw4fN"><img src="https://i.ibb.co/Xxh4h8Qk/b5.jpg" alt="b5" border="0"></a>
-<a href="https://ibb.co/F4mHHPRy"><img src="https://i.ibb.co/0ymsswH6/b6.jpg" alt="b6" border="0"></a>
-<a href="https://ibb.co/6c3KXvhy"><img src="https://i.ibb.co/bjS4bHh6/b8.jpg" alt="b8" border="0"></a>
-<a href="https://ibb.co/9kzL6Z8K"><img src="https://i.ibb.co/KpRkdK04/b9.jpg" alt="b9" border="0"></a>
-<a href="https://ibb.co/d4dXMfXL"><img src="https://i.ibb.co/b5SYm6Y2/b10.jpg" alt="b10" border="0"></a>
-<a href="https://ibb.co/SwBxLcwK"><img src="https://i.ibb.co/60FZd804/brain.jpg" alt="brain" border="0"></a>
-<a href="https://ibb.co/SDLNzZsp"><img src="https://i.ibb.co/gbnyxcjC/p08.jpg" alt="p08" border="0"></a>
-<a href="https://ibb.co/KxmZFG5s"><img src="https://i.ibb.co/QvXBrcJH/p11.jpg" alt="p11" border="0"></a>
-<a href="https://ibb.co/pBPqhBWk"><img src="https://i.ibb.co/0RX5sRBz/p12.jpg" alt="p12" border="0"></a>
-<a href="https://ibb.co/hxv9vN26"><img src="https://i.ibb.co/JWPtPTr1/p13.jpg" alt="p13" border="0"></a>
-<a href="https://ibb.co/hx7fZQjQ"><img src="https://i.ibb.co/wZ0swGXG/p14.jpg" alt="p14" border="0"></a>
-<a href="https://ibb.co/j94ybLV0"><img src="https://i.ibb.co/Q7mPp68S/p15.jpg" alt="p15" border="0"></a>
-<a href="https://ibb.co/jk8vGMvC"><img src="https://i.ibb.co/xq2SGjSn/p21.jpg" alt="p21" border="0"></a>
-<img class="highlight" src="https://i.ibb.co/xrT15Fb/Whats-App-Image-2026-02-10-at-12-24-22-PM-2.jpg">
-<img src="https://i.ibb.co/1GHXKX8f/Whats-App-Image-2026-02-10-at-12-24-22-PM-1.jpg">
-<img src="https://i.ibb.co/JW4Kgh6J/Whats-App-Image-2026-02-10-at-12-24-58-PM-1.jpg">
-<img src="https://i.ibb.co/7J7JnCby/Whats-App-Image-2026-02-10-at-12-24-57-PM-1.jpg">
-  <a href="https://ibb.co/JFvJKYwV"><img src="https://i.ibb.co/Xk7Rbnr1/Whats-App-Image-2024-09-08-at-1-29-35-PM-1.jpg" alt="Whats-App-Image-2024-09-08-at-1-29-35-PM-1" border="0"></a>
-<img class="highlight" src="https://i.ibb.co/Hf4439yt/Whats-App-Image-2026-02-10-at-12-24-57-PM.jpg">
-<a href="https://ibb.co/N2h27mGg"><img src="https://i.ibb.co/RTnT7BJG/Whats-App-Image-2025-07-20-at-12-38-31-PM.jpg" alt="Whats-App-Image-2025-07-20-at-12-38-31-PM" border="0"></a>
-<a href="https://ibb.co/B2ffPTTZ"><img src="https://i.ibb.co/Jjccdrr7/Whats-App-Image-2025-07-21-at-10-40-13-PM.jpg" alt="Whats-App-Image-2025-07-21-at-10-40-13-PM" border="0"></a>
-<a href="https://ibb.co/xSNDxhcz"><img src="https://i.ibb.co/HDjV57MG/Whats-App-Image-2025-07-21-at-10-40-14-PM.jpg" alt="Whats-App-Image-2025-07-21-at-10-40-14-PM" border="0"></a>
-<a href="https://ibb.co/5hBY65Fz"><img src="https://i.ibb.co/k2Q3xh1r/Whats-App-Image-2025-07-21-at-10-40-14-PM-1.jpg" alt="Whats-App-Image-2025-07-21-at-10-40-14-PM-1" border="0"></a>
-<a href="https://ibb.co/Myy25Hcq"><img src="https://i.ibb.co/kVVH6T4Y/Whats-App-Image-2025-07-21-at-10-40-15-PM-1.jpg" alt="Whats-App-Image-2025-07-21-at-10-40-15-PM-1" border="0"></a>
-<a href="https://ibb.co/vCD68xh1"><img src="https://i.ibb.co/sptdrvCj/Whats-App-Image-2025-07-21-at-10-40-16-PM.jpg" alt="Whats-App-Image-2025-07-21-at-10-40-16-PM" border="0"></a>
-<a href="https://ibb.co/3YNtvBGj"><img src="https://i.ibb.co/4gTB2P9X/Whats-App-Image-2025-07-21-at-10-40-15-PM-2.jpg" alt="Whats-App-Image-2025-07-21-at-10-40-15-PM-2" border="0"></a>
-<a href="https://ibb.co/9m0fGYRc"><img src="https://i.ibb.co/SDg1Jvq5/Whats-App-Image-2026-02-10-at-12-24-22-PM-2.jpg" alt="Whats-App-Image-2026-02-10-at-12-24-22-PM-2" border="0"></a>
-<a href="https://ibb.co/QvjZFnHY"><img src="https://i.ibb.co/gZFGMwWt/Whats-App-Image-2026-02-10-at-12-24-57-PM-1.jpg" alt="Whats-App-Image-2026-02-10-at-12-24-57-PM-1" border="0"></a>
-<a href="https://ibb.co/m5pDRDrz"><img src="https://i.ibb.co/XxH2W2fJ/Whats-App-Image-2026-02-10-at-12-24-57-PM.jpg" alt="Whats-App-Image-2026-02-10-at-12-24-57-PM" border="0"></a>
-<a href="https://ibb.co/4wmWJjdb"><img src="https://i.ibb.co/SDsNJKrk/Whats-App-Image-2026-02-10-at-12-24-58-PM.jpg" alt="Whats-App-Image-2026-02-10-at-12-24-58-PM" border="0"></a>
-<a href="https://ibb.co/0VnL5ZS1"><img src="https://i.ibb.co/Lh0yK6WB/cow.jpg" alt="cow" border="0"></a>
-<a href="https://ibb.co/N29wWbZ6"><img src="https://i.ibb.co/CKbxVDh5/santa.jpg" alt="santa" border="0"></a>
-<a href="https://ibb.co/qFm4WDWY"><img src="https://i.ibb.co/jZ3xW8Wk/ganesh.jpg" alt="ganesh" border="0"></a>
-<a href="https://ibb.co/Z6Qg8v7J"><img src="https://i.ibb.co/XZn5s6M4/y1-6.jpg" alt="y1-6" border="0"></a>
-<a href="https://ibb.co/VWhxLWjZ"><img src="https://i.ibb.co/zhLFmhnY/y1-7.jpg" alt="y1-7" border="0"></a>
-<a href="https://ibb.co/jP70SKZN"><img src="https://i.ibb.co/NdwDMhnv/y1-8.jpg" alt="y1-8" border="0"></a>
-<a href="https://ibb.co/9m8XgkK5"><img src="https://i.ibb.co/dsW9MwCY/y1-9.jpg" alt="y1-9" border="0"></a>
-  
-<a href="https://ibb.co/yB4TKTBq"><img src="https://i.ibb.co/DgrXmXgQ/p7.jpg" alt="p7" border="0"></a>
-<a href="https://ibb.co/hxkdT1Rf"><img src="https://i.ibb.co/Y46dVT7Z/p9.jpg" alt="p9" border="0"></a>
-<a href="https://ibb.co/FbBVsTpw"><img src="https://i.ibb.co/jvLRVXtM/p22.jpg" alt="p22" border="0"></a>
-<a href="https://ibb.co/VpmZ72Gw"><img src="https://i.ibb.co/G3TLKcDH/p23.jpg" alt="p23" border="0"></a>
-<a href="https://ibb.co/SwmLsJJ9"><img src="https://i.ibb.co/nM1WgRR5/p24.jpg" alt="p24" border="0"></a>
-<a href="https://ibb.co/jvLmtFmm"><img src="https://i.ibb.co/yn8t2Jtt/p25.jpg" alt="p25" border="0"></a>
-<a href="https://ibb.co/ZRmKfxVL"><img src="https://i.ibb.co/9mt2pWN8/p26.jpg" alt="p26" border="0"></a>
-<a href="https://ibb.co/yn0qFdxj"><img src="https://i.ibb.co/bg1X5QG9/p27.jpg" alt="p27" border="0"></a>
-<a href="https://ibb.co/7JFnx8jW"><img src="https://i.ibb.co/HDQtL1Bz/p28.jpg" alt="p28" border="0"></a>
-<a href="https://ibb.co/xK3S1HkG"><img src="https://i.ibb.co/Q7XFPdgn/p30.jpg" alt="p30" border="0"></a>
-<a href="https://ibb.co/csJ2c37"><img src="https://i.ibb.co/yx0gnPb/p31.jpg" alt="p31" border="0"></a>
+<img src="https://i.ibb.co/Lh0yK6WB/cow.jpg" alt="Cow Stone Art Painting by Yashika Purwar">
+<img src="https://i.ibb.co/jZ3xW8Wk/ganesh.jpg" alt="Ganesh Miniature Painting by Yashika Purwar">
+<img src="https://i.ibb.co/CKbxVDh5/santa.jpg" alt="Santa Claus Artwork by Yashika Purwar">
+<img src="https://i.ibb.co/yx0gnPb/p31.jpg" alt="Fine Art Portrait by Yashika Purwar">
+<img src="https://i.ibb.co/Q7XFPdgn/p30.jpg" alt="Creative Sketch Art by Yashika Purwar">
+</div>
+</section>
 
+<!-- TESTIMONIALS -->
+<section>
+<h2 class="section-title">Testimonials</h2>
+<div class="card">
+"Yashika's art classes improved my child's creativity and confidence." – Parent
+</div>
+<div class="card">
+"Beautiful custom artwork delivered on time with amazing detailing." – Client
 </div>
 </section>
 
@@ -416,37 +241,22 @@ Creative and passionate Art Teacher and Freelance Artist with over 4 years of ex
 <section id="contact">
 <h2 class="section-title">Contact</h2>
 <div class="card" style="text-align:center;">
-<p>📍 Madan Mahal LIC, Near Bagga Hotel, Jabalpur</p>
-<p>📞 9691419001</p>
+<p>📍 Jabalpur, Madhya Pradesh, India</p>
+<p>📞 +91 9691419001</p>
 <p>📧 purwaryashi23@gmail.com</p>
-<a href="https://wa.me/919691419001" class="btn">WhatsApp Me</a>
+<a href="tel:9691419001" class="btn">Call Now</a>
+<a href="mailto:purwaryashi23@gmail.com" class="btn">Email Me</a>
+<a href="https://wa.me/919691419001" class="btn">WhatsApp</a>
 </div>
-</section>
 
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-<img id="lightbox-img">
-</div>
+<iframe src="https://www.google.com/maps?q=Jabalpur&output=embed"
+width="100%" height="250" style="border-radius:20px;margin-top:20px;"></iframe>
+
+</section>
 
 <footer>
 © 2026 Yashika Purwar | All Rights Reserved
 </footer>
-
-<script>
-
-function toggleMenu(){
-document.getElementById("mobileNav").classList.toggle("active");
-}
-
-function openLightbox(src){
-document.getElementById("lightbox").style.display="flex";
-document.getElementById("lightbox-img").src=src;
-}
-
-function closeLightbox(){
-document.getElementById("lightbox").style.display="none";
-}
-
-</script>
 
 </body>
 </html>
