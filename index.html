@@ -1,3 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO META -->
+<title>Yashika Purwar | Creative Art Teacher | Freelance Artist | Art Portfolio Jabalpur</title>
+<meta name="description" content="Yashika Purwar is a professional Art Teacher and Freelance Artist based in Jabalpur specializing in stone art, sketching, painting, miniature art and creative curriculum development.">
+<meta name="keywords" content="Art Teacher Jabalpur, Freelance Artist India, Stone Art, Miniature Painting, Sketch Artist, Art Curriculum Designer, Creative Art Classes, Fine Arts Portfolio">
+<meta name="author" content="Yashika Purwar">
+<meta name="robots" content="index, follow">
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- AOS ANIMATION -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+
+/* ----------------- GLOBAL ----------------- */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+color:white;
+overflow-x:hidden;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+}
+
+section{
+padding:80px 10%;
+position:relative;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 10%;
+z-index:1000;
+}
+
+nav h2{
+color:#fff;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ff9a9e;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background-size:cover;
+background-position:center;
+animation:slideBg 20s infinite;
+}
+
+@keyframes slideBg{
+0%{background-image:url('https://images.unsplash.com/photo-1513364776144-60967b0f800f');}
+33%{background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');}
+66%{background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba');}
+100%{background-image:url('https://images.unsplash.com/photo-1513364776144-60967b0f800f');}
+}
+
+.hero-content{
+background:rgba(0,0,0,0.5);
+padding:40px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+}
+
+.hero h1{
+font-size:50px;
+background:linear-gradient(45deg,#ff9a9e,#fad0c4);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:linear-gradient(45deg,#ff9a9e,#fad0c4);
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* GLASS CARD */
+
+.glass{
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+margin-top:20px;
+transition:.4s;
+}
+
+.glass:hover{
+transform:translateY(-10px);
+}
+
+/* TIMELINE */
+
+.timeline{
+border-left:3px solid #ff9a9e;
+padding-left:20px;
+}
+
+.timeline div{
+margin-bottom:30px;
+}
+
+/* SKILLS */
+
+.skill{
+margin-bottom:20px;
+}
+
+.progress{
+background:#333;
+height:10px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.progress-bar{
+height:10px;
+width:0;
+background:linear-gradient(45deg,#ff9a9e,#fad0c4);
+animation:fill 3s forwards;
+}
+
+@keyframes fill{
+to{width:90%;}
+}
+
+/* PORTFOLIO */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:20px;
+transition:.4s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.1) rotate(2deg);
+}
+
+/* CONTACT */
+
+.contact a{
+color:#ff9a9e;
+text-decoration:none;
+}
+
+/* WHATSAPP FLOAT */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+nav ul{display:none;}
+.hero h1{font-size:35px;}
+section{padding:60px 5%;}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Yashika Purwar</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div class="hero-content" data-aos="zoom-in">
+<h1>Creative Art Teacher & Freelance Artist</h1>
+<p>Inspiring Creativity | Curriculum Design | Stone Art | Miniature Painting</p>
+<a href="#contact" class="btn">Hire Me</a>
+<a href="#" class="btn">Download CV</a>
+</div>
+</section>
+
+<section id="about" data-aos="fade-up">
+<h2>Professional Summary</h2>
+<div class="glass">
+<p>Creative and passionate Art Teacher with 4+ years of teaching and freelance experience specializing in stone art, sketching, painting and curriculum development. Dedicated to nurturing artistic growth and delivering high-quality customized artwork for clients.</p>
+</div>
+</section>
+
+<section id="experience" data-aos="fade-up">
+<h2>Work Experience</h2>
+<div class="timeline">
+<div>
+<h3>Art Instructor – Brain Train Academy (2022–Present)</h3>
+<p>Developed structured art curriculum, conducted workshops, guided students and improved creative engagement.</p>
+</div>
+<div>
+<h3>Freelance Artist – UV Studio (2020–Present)</h3>
+<p>Delivered customized artwork, managed multiple projects and collaborated with clients professionally.</p>
+</div>
+</div>
+</section>
+
+<section id="skills" data-aos="fade-up">
+<h2>Professional Skills</h2>
+<div class="skill">
+<p>Art Curriculum Development</p>
+<div class="progress"><div class="progress-bar"></div></div>
+</div>
+<div class="skill">
+<p>Sketching & Painting</p>
+<div class="progress"><div class="progress-bar"></div></div>
+</div>
+<div class="skill">
+<p>Stone & Miniature Art</p>
+<div class="progress"><div class="progress-bar"></div></div>
+</div>
+</section>
+
+<section id="portfolio" data-aos="fade-up">
+<h2>Portfolio Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+</div>
+</section>
+
+<section id="contact" data-aos="fade-up">
+<h2>Contact</h2>
+<div class="glass contact">
+<p>📍 Madan Mahal LIC, Near Bagga Hotel, Jabalpur</p>
+<p>📞 9691419001</p>
+<p>📧 purwaryashi23@gmail.com</p>
+<a href="https://wa.me/919691419001" target="_blank">Chat on WhatsApp</a>
+</div>
+</section>
+
+<a href="https://wa.me/919691419001" class="whatsapp" target="_blank">💬</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+duration:1200,
+once:true
+});
+</script>
+
+</body>
+</html>
 
 
 
